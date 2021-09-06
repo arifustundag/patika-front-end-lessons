@@ -1,0 +1,66 @@
+/* ---------------------
+maybe make responsive navbar link 
+without flexbox-float-grid etc
+ nav ul{text-align: end;}
+nav li {
+    display: inline;
+    padding: 50px;
+  }
+----------------------------*/
+/* list dot
+main li {
+    list-style-position: inside;
+  } ---------------*/
+
+
+* {
+  /* border: 0.1px solid red; */
+  margin: 5px auto;
+  padding: 0;
+}
+
+/*NAVBAR----------------*/
+nav {
+  text-align: center;
+  padding: 10px;
+}
+nav h1 {
+  color: red;
+}
+/* nav ul{text-align: end;} */
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+/*MAIN------------------*/
+
+main h2,
+h3,
+ul {
+  text-align: center;
+}
+main article,
+div h4 {
+  padding-left: 20px;
+  font-weight: lighter;
+}
+main li {
+  list-style-position: inside;
+}
+.h2pur {
+  color: blueviolet;
+  padding-top: 20px;
+}
+.h3green {
+  color: rgba(1, 104, 27, 0.829);
+}
+
+/*PRODUCTS*/
+.imgblock {
+  display: inline;
+  text-align: center;
+}
+section > ol li {
+  padding: 10px;
+}
