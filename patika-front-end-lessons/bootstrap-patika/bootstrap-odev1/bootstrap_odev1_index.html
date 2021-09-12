@@ -1,0 +1,204 @@
+<!--
+    ---------------------------
+    NAVBAR
+    ---------------------------
+    nav
+      class="navbar navbar-expand-sm navbar-dark"
+      style="background-color: rgb(1, 1, 46)"
+    *navbar-expand-sm -- prevent navbar collapsing in md-lg(bigger) screen
+    *ul has navbar-collapse -- like flex-wrap and reset margin to center
+    *a mx-auto -- position inline wrt to next item or  
+       center text if no item in same row px-4 gives wider border
+    -- Brand/logo --
+    a class="navbar-brand text-danger mx-auto px-4 border border-danger" 
+      href="bootstrap_odev1_index.html">Müzik dükkanım
+    -- Links --
+    ul class="navbar-nav navbar-collapse ml-sm-5"
+    -----------------------------------
+    bg-dark class override style="background-color: 
+    bootstrap default font size bigger 
+    .small
+    btn-light-- use in button or most of another tag
+    ------------------------------
+    css-negative margin:
+    pre style= "margin-left: -75px; position: absolute;
+    centering------------
+    div class="w-25 bg-warning m-auto" -- need width for use margin-auto
+    ul class="text-center list-unstyled"
+    h3 class="text-success text-center"
+    div class="row justify-content-center"><a href="#" class="btn btn-primary " role="button">Link Button</a></div
+    ---------------------------------
+    FLEX CARD
+    ---------------------------------
+    div class="row row-cols-xs-1 row-cols-sm-2 row-cols-lg-3"
+        div class="col-lg-4 col-sm-6 col-xs-12 mb-4"
+            div class="card h-100 border border-rounded border-success"
+                img class="card-img-top img-thumbnail"
+                    src="https://me....jpg" alt=""
+                div class="card-body d-flex flex-column justify-content-between"
+                    h5 class="card-title text-info">Yamaha MG10XU
+                    p class="card-text">Mikser
+                    p class="card-text badge bg-secondary align-self-start">2.443,69 TL
+    ---------------------------
+    container-fluid vs margin
+    ---------------------------
+    main class="container-fluid" style="border:1px solid red"> 
+    container or container-fluid gives variable margin and constant box-size 
+    m-5 or margin,padding gives constant margin and regularly decreasing box-size
+        while screen stretching until another mediaquery box-size 
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>products</title>
+  </head>
+
+  <body style="background-color: #e9ecef">
+    <!-- navbar-start-->
+
+    <nav
+      class="navbar navbar-expand-sm navbar-dark"
+      style="background-color: rgb(1, 1, 46)"
+    >
+      <!-- Brand/logo -->
+      <a class="navbar-brand text-danger mx-auto px-4 border border-danger" href="bootstrap_odev1_index.html"
+        >Müzik dükkanım</a
+      >
+
+      <!-- Links -->
+      <ul class="navbar-nav navbar-collapse ml-sm-5">
+        <li class="nav-item active">
+          <a class="nav-link" href="bootstrap_odev1_index.html">Ana sayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bootstrap_odev1_products.html"
+            >Ürünlerimiz</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bootstrap_odev1_about-us.html"
+            >Hakkımızda</a
+          >
+        </li>
+      </ul>
+      <hr />
+    </nav>
+    <!-- navbar-end-->
+
+    <main>
+      <div
+        class="jumbotron-fluid p-3 mb-3"
+        style="
+          background-color: rgba(135, 206, 250, 0.178);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.493);
+        "
+      >
+        <h2 class="text-danger text-center">Merhaba!</h2>
+        <p class="m-2 pl-3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint qui
+          dignissimos minima eveniet corporis, veniam beatae fugit magni sit.
+          Minima, distinctio. Iusto ab quos, eius dolores tenetur vel voluptas
+          provident!
+          <a href="bootstrap_odev1_products.html">Ürünlerimiz</a> saepe, hic
+          laborum facilis iste numquam?
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-success text-center">
+          Sitemizde bulunan müzik aletleri
+        </h3>
+        <ul class="text-center list-unstyled">
+          <li>Gitar</li>
+          <li>Davul</li>
+          <li>Piyano</li>
+          <li>Keman</li>
+        </ul>
+      </div>
+      <div class="row justify-content-center">
+        <a
+          href="bootstrap_odev1_about-us.html"
+          class="btn btn-primary"
+          role="button"
+          >Hakkımızda</a
+        >
+      </div>
+
+      <hr />
+
+      <div class="mt-4">
+        <h5 class="ml-4 text-warning">
+          some code notes render as text by using pre tag
+        </h5>
+        <pre style="margin-left: -40px; position: absolute">
+            ---------------------------
+            NAVBAR
+            ---------------------------
+            nav
+              class="navbar navbar-expand-sm navbar-dark"
+              style="background-color: rgb(1, 1, 46)"
+            *navbar-expand-sm -- prevent navbar collapsing in md-lg(bigger) screen
+            *ul has navbar-collapse -- like flex-wrap and reset margin to center
+            *a mx-auto -- position inline wrt to next item or  
+               center text if no item in same row px-4 gives wider border
+            -- Brand/logo --
+            a class="navbar-brand text-danger mx-auto px-4 border border-danger" 
+              href="bootstrap_odev1_index.html">Müzik dükkanım
+            -- Links --
+            ul class="navbar-nav navbar-collapse ml-sm-5"
+
+            --------
+            bg-dark class override style="background-color:
+            --bootstrap default font size bigger 
+            .small
+            btn-light-- use in button or most of another tag
+            --css-negative margin:
+              pre style= "margin-left: -75px; position: absolute;
+
+            div class="w-25 bg-warning m-auto" -- need width for use margin-auto  
+            h3 class="text-success text-center"
+            ul class="text-center list-unstyled"
+            div class="row justify-content-center"
+               a> href="#" class="btn btn-primary " role="button">Hakkımızda
+            ---------------------------------
+            FLEX CARD
+            ---------------------------------
+            div class="row row-cols-xs-1 row-cols-sm-2 row-cols-lg-3"
+                div class="col-lg-4 col-sm-6 col-xs-12 mb-4"
+                    div class="card h-100 border border-rounded border-success"
+                        img class="card-img-top img-thumbnail"
+                            src="https://me....jpg" alt=""
+                        div class="card-body d-flex flex-column justify-content-between"
+                            h5 class="card-title text-info">Yamaha MG10XU
+                            p class="card-text">Mikser
+                            p class="card-text badge bg-secondary align-self-start">2.443,69 TL
+            ---------------------------
+            container-fluid vs margin
+            ---------------------------
+            main class="container-fluid" style="border:1px solid red"> 
+            container or container-fluid gives variable margin and constant box-size 
+            m-5 or margin,padding gives constant margin and regularly decreasing box-size
+              while screen stretching until another mediaquery box-size 
+         
+            </pre
+        >
+      </div>
+    </main>
+  </body>
+</html>
