@@ -81,6 +81,7 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
 //window.onload to make sure js loaded in html
 window.onload = () => {
   //add menu buttons--------------------------
@@ -118,23 +119,37 @@ window.onload = () => {
 
 
   //button click events
-  document.getElementById("All").onclick = () => {
-    filteredMenu = menu;
-    handleCards(filteredMenu)
-  }
-  document.getElementById("Korea").onclick = () => {
-    filteredMenu = menu.filter(i => i.category === "Korea")
-    handleCards(filteredMenu)
-  }
-  document.getElementById("Japan").onclick = () => {
-    filteredMenu = menu.filter(i => i.category === "Japan")
-    handleCards(filteredMenu)
-  }
-  document.getElementById("China").onclick = () => {
-    filteredMenu = menu.filter(i => i.category === "China")
-    handleCards(filteredMenu)
-  }
+  categories.forEach(x =>
+    document.getElementById(x).onclick = () => {
+      if (x === "All") filteredMenu = menu;
+      else filteredMenu = menu.filter(i => i.category === x);
+      handleCards(filteredMenu)
+    }
+  )
+  /*   document.getElementById("All").onclick = () => {
+      handleCards(filteredMenu = menu)
+    } */
+  /*   document.getElementById("Korea").onclick = () => {
+      filteredMenu = menu.filter(i => i.category === "Korea")
+      handleCards(filteredMenu)
+    }
+    document.getElementById("Japan").onclick = () => {
+      filteredMenu = menu.filter(i => i.category === "Japan")
+      handleCards(filteredMenu)
+    }
+    document.getElementById("China").onclick = () => {
+      filteredMenu = menu.filter(i => i.category === "China")
+      handleCards(filteredMenu)
+    } */
 
+  /* 
+      for (const x of categories) {
+        document.getElementById(x).onclick = () => {
+          if (x === "All") filteredMenu = menu;
+          else filteredMenu = menu.filter(i => i.category === x);
+          handleCards(filteredMenu)
+        }
+      } */
 }
 
 
